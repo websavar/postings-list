@@ -1,0 +1,11 @@
+$logo-height: 21px;
+$logo-width: 167px;
+
+.logo {
+    background: url("../../imgs/logo.svg") 0 0 no-repeat;
+    display: inline-block;
+    left: 20px;
+    padding-left: 300px !important;
+    height: $logo-height;
+    width: $logo-width;
+}

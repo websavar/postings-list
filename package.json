@@ -1,0 +1,54 @@
+{
+    "name": "smart-recruiters",
+    "version": "0.1.0",
+    "private": true,
+    "author": "Hamidreza Soltani",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "interweave": "^12.7.1",
+        "node-sass": "^4.13.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-redux": "^7.2.3",
+        "react-router-dom": "^5.1.2",
+        "react-scripts": "3.4.0",
+        "redux": "^4.0.5",
+        "redux-thunk": "^2.3.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "jest",
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.13.0",
+        "@babel/plugin-transform-runtime": "^7.13.10",
+        "@babel/preset-env": "^7.13.12",
+        "@babel/preset-react": "^7.13.13",
+        "@types/redux-logger": "^3.0.8",
+        "babel-plugin-module-resolver": "^4.1.0",
+        "jest": "^24.9.0",
+        "puppeteer": "^8.0.0",
+        "redux-logger": "^3.0.6",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^4.6.0"
+    }
+}

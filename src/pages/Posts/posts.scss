@@ -1,0 +1,55 @@
+@import '../../colors.scss';
+
+$job-title-font-size: 1.1rem;
+$job-description-font-size: 1rem;
+$posts-title-font-size: 1.4rem;
+$post-title-font-size: 1.3rem;
+
+.posts-title {
+    color: $posts-title-color;
+    font-size: $post-title-font-size;
+    font-weight: 600;
+}
+
+.job {
+    border-bottom: 1px solid $light-color2;
+    padding: 10px 15px;
+    width: 100%;
+
+    .job-title {
+        color: $job-title-color;
+        font-size: $job-title-font-size;
+        transition: 0.1s ease-in;
+    }
+
+    .job-details {
+        color: $job-details-color;
+    }
+}
+
+a {
+    &:hover {
+        .job-title {
+            color: $job-title-link-color;
+            text-decoration: underline;
+        }
+    }
+
+    &:active .job-title,
+    &:focus .job-title,
+    &:visited:focus .job-title {
+        color: $job-title-active-color;
+    }
+}
+
+.page-title {
+    font-size: $post-title-font-size;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.title {
+    color: $posts-title-color;
+    font-size: $job-description-font-size;
+    font-weight: 700;
+}

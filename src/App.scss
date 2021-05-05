@@ -1,0 +1,21 @@
+$default-font-size: 14px;
+
+html {
+    min-height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body {
+    color: #444545;
+    font-size: $default-font-size;
+    font-family: 'Roboto', sans-serif, Tahoma;
+    margin: 0;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a:hover {
+    text-decoration: none;
+}

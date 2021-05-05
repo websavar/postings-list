@@ -1,0 +1,17 @@
+@import '../../colors.scss';
+
+$footer-font-size: 12px;
+
+.footer {
+    background: $footer-bg-color;
+    border-top: 1px solid $gray2;
+    bottom: 0;
+    color: $footer-color;
+    font-size: $footer-font-size;
+    font-weight: 600;
+    padding: 1rem 0;
+    position: absolute;
+    text-align: center;    
+    width: 100%;
+    z-index: 1;
+}
