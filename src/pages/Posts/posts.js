@@ -24,13 +24,11 @@ function Posts() {
 
     const departments = [...new Set(postsData.map(item => item.department.label))];
 
-    let data = postsData;
-
     const matchCountry = (countryCode) => {
         return countries.find(co => co.alpha2Code === countryCode.toUpperCase()).name;
     }
 
-    data = postsData.filter(item => {
+    let data = postsData.filter(item => {
         return (filter.country === '' ? true : matchCountry(item.location.country).toLowerCase().includes(filter.country)) &&
             (filter.department === '' ? true : item.department.label.toLowerCase().includes(filter.department));
     });
@@ -66,7 +64,7 @@ function Posts() {
                     data.length === 0 ? <div>Nothing found! Please try a different search</div> :
                         data.map((post, index) => {
                             return (
-                                <div className="row" key={index}>
+                                <div className="row" key={post.id}>
                                     <NavLink className="job" to={`Posts/${post.id}`}>
                                         <h3 className="job-title">{getJobTitle(post.name)}</h3>
                                         <div className="job-details">
